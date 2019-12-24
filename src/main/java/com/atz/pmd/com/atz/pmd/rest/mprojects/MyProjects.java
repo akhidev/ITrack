@@ -1,9 +1,16 @@
 package com.atz.pmd.com.atz.pmd.rest.mprojects;
 
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import javax.persistence.*;
 import java.util.Date;
 import java.util.Objects;
-
+@Entity
+@Table(name = "MY_PROJECTS")
+@EntityListeners(AuditingEntityListener.class)
 public class MyProjects {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long projectId;
     private String projectName;
     private String projectDesc;
