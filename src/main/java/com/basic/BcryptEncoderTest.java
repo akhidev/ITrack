@@ -1,4 +1,4 @@
-package com.atz.pmd.rest.security.basic;
+package com.basic;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
