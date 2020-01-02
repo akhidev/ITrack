@@ -1,4 +1,4 @@
-package com.atz.pmd.rest.security;
+package com.atz.pmd.security;
 
 public class AuthenticationBean {
 

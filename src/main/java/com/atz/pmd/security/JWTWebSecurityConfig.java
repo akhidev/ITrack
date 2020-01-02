@@ -1,4 +1,4 @@
-package com.atz.pmd.rest.security;
+package com.atz.pmd.security;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

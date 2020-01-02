@@ -1,4 +1,4 @@
-package com.atz.pmd.rest.security;
+package com.atz.pmd.security;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;

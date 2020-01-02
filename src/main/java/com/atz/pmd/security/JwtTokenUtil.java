@@ -1,4 +1,4 @@
-package com.atz.pmd.rest.security;
+package com.atz.pmd.security;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.HashMap;

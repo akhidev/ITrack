@@ -1,4 +1,4 @@
-package com.atz.pmd.rest.security.resource;
+package com.atz.pmd.security.resource;
 
 import java.util.Objects;
 
@@ -21,8 +21,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.atz.pmd.rest.security.JwtTokenUtil;
-import com.atz.pmd.rest.security.JwtUserDetails;
+import com.atz.pmd.security.JwtTokenUtil;
+import com.atz.pmd.security.JwtUserDetails;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")

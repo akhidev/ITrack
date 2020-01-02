@@ -1,4 +1,4 @@
-package com.atz.pmd.rest.security;
+package com.atz.pmd.security;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -15,11 +15,8 @@ public class JwtInMemoryUserDetailsService implements UserDetailsService {
 
 	static {
 		inMemoryUserList.add(new JwtUserDetails(1L, "admin",
-				"$2a$10$EnY2vndGmgzQkc0pLH4uW.phuL.uGQ5UeN16CHy3PsBs5TtgmO5Ri", "ROLE_USER_2"));
-//		inMemoryUserList.add(new JwtUserDetails(2L, "ranga",
-//				"$2a$10$IetbreuU5KihCkDB6/r1DOJO0VyU9lSiBcrMDT.biU7FOt2oqZDPm", "ROLE_USER_2"));
-//
-		//$2a$10$IetbreuU5KihCkDB6/r1DOJO0VyU9lSiBcrMDT.biU7FOt2oqZDPm
+				"$2a$10$N3/k27fCNL1/PGQY1XcQy.1l9uVPeMOgZXKQUN5K8ZvnIc.GdBjoy", "ROLE_USER_2"));
+
 	}
 
 	@Override

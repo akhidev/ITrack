@@ -1,4 +1,4 @@
-package com.atz.pmd.rest.security.resource;
+package com.atz.pmd.security.resource;
 
 import java.io.Serializable;
 

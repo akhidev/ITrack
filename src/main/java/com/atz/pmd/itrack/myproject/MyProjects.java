@@ -1,17 +1,19 @@
-package com.atz.pmd.com.atz.pmd.rest.mprojects;
-
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+package com.atz.pmd.itrack.myproject;
 
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Objects;
-//@Entity
+
+@Entity
 //@Table(name = "MY_PROJECTS")
 //@EntityListeners(AuditingEntityListener.class)
 public class MyProjects {
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "projectId")
     private long projectId;
+
+    private String username;
     private String projectName;
     private String projectDesc;
     private Date startDate;
@@ -61,6 +63,7 @@ public class MyProjects {
     public String toString() {
         return "MyProjects{" +
                 "projectId=" + projectId +
+                ", username='" + username + '\'' +
                 ", projectName='" + projectName + '\'' +
                 ", projectDesc='" + projectDesc + '\'' +
                 ", startDate=" + startDate +
@@ -68,6 +71,16 @@ public class MyProjects {
                 '}';
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    protected MyProjects() {
+
+    }
     protected MyProjects(String s) {
     }
 
